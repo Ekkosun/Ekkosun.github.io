@@ -12,12 +12,12 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"8.0.0-rc.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"8.0.0-rc.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":10,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="A Blog of Huster">
@@ -101,6 +101,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -121,39 +122,51 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">1</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">2</span></a>
 
   </li>
-        <li class="menu-item menu-item-schedule">
-
-    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
-
-  </li>
-        <li class="menu-item menu-item-sitemap">
-
-    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
-
-  </li>
-        <li class="menu-item menu-item-commonweal">
-
-    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
-
-  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -172,151 +185,6 @@
 
           <div class="content index posts-expand">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/30/leetcode-343/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="SunWenJu">
-      <meta itemprop="description" content="A Blog of Huster">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="WhiteSheep's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/30/leetcode-343/" class="post-title-link" itemprop="url">leetcode：343题题解</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-07-30 21:47:12 / 修改时间：22:38:46" itemprop="dateCreated datePublished" datetime="2020-07-30T21:47:12+08:00">2020-07-30</time>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/07/30/leetcode-343/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/07/30/leetcode-343/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="LeetCode-343-题整数分割题解"><a href="#LeetCode-343-题整数分割题解" class="headerlink" title="LeetCode 343.题整数分割题解"></a>LeetCode 343.题整数分割题解</h2><h2 id="解法一"><a href="#解法一" class="headerlink" title="解法一"></a>解法一</h2><p><a href="https://leetcode-cn.com/problems/integer-break/" target="_blank" rel="noopener">题目传送门</a></p>
-<h3 id="一、相关知识："><a href="#一、相关知识：" class="headerlink" title="一、相关知识："></a>一、相关知识：</h3><p>在高中的时候都学到过，N个数和一定时，其积有最大值，当且仅当这N个数相等时取得最大。</p>
-<p>只有两个数时公式为：</p>
-<script type="math/tex; mode=display">
-a^2 + b^2 \ge2ab \left(当且仅当a=b时等号成立\right)</script><p>多个数时的公式：</p>
-<script type="math/tex; mode=display">
-\frac{_1+a_2+a_3+a_4+a_5+a_6+···+a_n}{n}\ge\sqrt[n]{a_1a_2a_3a_4a_5···a_n}
-\\\left(当且仅当a_1=a_2=a_3=···=a_n时等号成立\right)</script><h3 id="二、分析：-文中NumGiven为所给的整数"><a href="#二、分析：-文中NumGiven为所给的整数" class="headerlink" title="二、分析：(文中NumGiven为所给的整数)"></a>二、分析：(文中NumGiven为所给的整数)</h3><p>根据这两个公式我们可以有一个大致的方向：尽量将正整数分为$m-1$个大小大相同且为$n$的正整数，和另外一个正整数，其中$ m=2、3、4···$</p>
-<p>我们首先以整数 10 为例，10 可以被分为</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">拆分成的数集</th>
-<th style="text-align:center">乘积</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">$2\ 2\ 2\ 2\ 2$</td>
-<td style="text-align:center">$2\times2\times2\times2\times2$</td>
-</tr>
-<tr>
-<td style="text-align:center">$3\ 3\ 3 \ 1$</td>
-<td style="text-align:center">$3\times3\times\left(3+1\right)$</td>
-</tr>
-<tr>
-<td style="text-align:center">$4 \ 4\ 2$</td>
-<td style="text-align:center">$4\times4\times2$</td>
-</tr>
-<tr>
-<td style="text-align:center">$5\ 5$</td>
-<td style="text-align:center">$5\times5$</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>从上述表中我们可以看出，拆分出的相等的元素的个数为<code>NumGiven/n</code>，另外一个正整数为<code>NumGiven%n</code></p>
-<p>表中第二行为$3\times3\times\left(3+1\right)$是因为当余数为 1 时，拆分所得的$m-1$个值为$n$的正整数相乘再乘 1 的值远没有$m-2$个值为$n$的正整数相乘再与$n+1$相乘所得的结果大。(一个正整数共拆分为m个正整数)</p>
-<p>当余数不为 1 时，拆分所得的$m-1$个值为$n$的正整数相乘再乘余数的值远比$m-2$个值为$n$的正整数相乘再与$n+余数$相乘所得的结果大</p>
-<p>推导如下：(令余数为r)</p>
-<script type="math/tex; mode=display">
-\frac{n^{m-1}\cdot r}{n^{m-2}\cdot{\left(n+r\right)}}=\frac{nr}{n+r}=\frac{r}{1+\frac{r}{n}}
-\\因为\frac{r}{n}<1且由上述假设r\ge2所以可得
-\\\frac{n^{m-1}\cdot r}{n^{m-2}\cdot{\left(n+r\right)}}>1</script><p>到这，我们可以大概得出解题的流程：</p>
-<ol>
-<li><p>求出<code>NumGiven/n</code>以及<code>NumGiven%n</code>的值。</p>
-</li>
-<li><p>如果<code>NumGiven%n == 0</code>则当前最大值为<code>Pow(n,NumGiven/n-1)</code>，并且跳转至4，反之则跳转至3。</p>
-</li>
-<li><p>如果<code>NumGiven%n == 1</code>则当前最大值为<code>Pow(n,NumGiven/n-1)*(n+1)</code>，反之当前最大值为<code>Pow(n,NumGiven/n)*(NumGiven%n)</code>。</p>
-</li>
-<li><p>比较当前最大值与前一个最大值的大小，更新数据，变动n的值。</p>
-</li>
-<li><p>判断n是否大于<code>NumGiven</code>，若果是则跳转到5，反之跳转到1。</p>
-</li>
-<li><p>退出循环，输出最大值。</p>
-</li>
-</ol>
-<p>算法时间复杂度为$O(n)$，空间复杂度为$O(1)$</p>
-<p>按照上述算法编写代码会出现当输入的整数位2，3时输出错误的现象，至于为什么会出现错误读者可带入算法进性检验。下面提供两种解决方案：</p>
-<ol>
-<li>在算法最开始的时候判断输入的整数是否大于3，如果是则调用算法，反之则直接输出<code>NumGiven-1</code></li>
-<li>在程序中增加判断语言，对可能出现的错误现象进行修正，笔者采用的就是第二种方法。</li>
-</ol>
-<p>代码如下：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">integerBreak</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> <span class="built_in">max</span>=<span class="number">-1</span>;				<span class="comment">//设定初始的最大值位-1，便于对最大值进行覆盖填写</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">int</span> temp_max=<span class="number">1</span>;			<span class="comment">//存放当前最大值的变量	</span></span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;n;i++)	<span class="comment">//从2开始遍历直到n-1</span></span><br><span class="line">    &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> num=n/i;		<span class="comment">//计算出该整数包含多少个n</span></span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        temp_max=<span class="built_in">pow</span>(i,num);<span class="comment">//按照分析的算法步骤先处理m-1个值为n的正整数，再对余数进行处理。</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(n%i!=<span class="number">0</span>)			<span class="comment">//余数为0时，应直接返回数值，不能再乘余数</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(n%i==<span class="number">1</span>&amp;&amp;num!=<span class="number">1</span>)	<span class="comment">//该步骤用于处理的正整数为3的特殊情况。</span></span><br><span class="line">            temp_max=(temp_max/i)*(i+n%i);</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            temp_max*=n%i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">max</span> = <span class="built_in">max</span>&gt;temp_max?<span class="built_in">max</span>:temp_max;</span><br><span class="line">        temp_max=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">max</span>==<span class="number">-1</span>)			<span class="comment">//该步骤用于处理输入的正整数位2的特殊情况</span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">max</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="解法二"><a href="#解法二" class="headerlink" title="解法二"></a>解法二</h2><h3 id="一、分析："><a href="#一、分析：" class="headerlink" title="一、分析："></a>一、分析：</h3><p>通过解法一我们可以求出乘积的最大值，也可以求出当n值位多少时输出最大，再计算完58个实例之后发现，乘积的最大值总是在$n=3$处取得。下面对为什么总是再$n=3$处取得进行粗略的分析。</p>
-<p>由解法一的分析我们可知，只有当被分成所有整数都相等时才能取得乘积最大，又因为要分成正整数。实现不了完全相等，这里我们先假设只需求得被分成所有数的乘积最大。于是可以列出下面的式子：</p>
-<script type="math/tex; mode=display">
-Max \ \ \ =\ \ \ max\{x^\frac{n}{x}\}</script><p>式子中的x为均等分之后的值。使用Maltlab画出图像有：</p>
-<p><img src="/2020/07/30/leetcode-343/343.png" alt="555"></p>
-<p>该图像时从1到58对其进行均等分割并且相乘得到的图像，由图像可以粗略的看出当满足正整数条件的时候，x=3时乘积值最大，故由此可优化解法一，我们无需遍历，可直接默认分割得到的整数大部分都为3，即n=3。因此我们可以优化时间复杂度至$O(1)$。代码与方法一大致相同，留做读者思考。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
       
   
   
@@ -352,7 +220,7 @@ Max \ \ \ =\ \ \ max\{x^\frac{n}{x}\}</script><p>式子中的x为均等分之后
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-14 12:26:40" itemprop="dateModified" datetime="2020-07-14T12:26:40+08:00">2020-07-14</time>
+                <time title="修改时间：2020-07-31 15:30:21" itemprop="dateModified" datetime="2020-07-31T15:30:21+08:00">2020-07-31</time>
               </span>
 
           
@@ -369,7 +237,14 @@ Max \ \ \ =\ \ \ max\{x^\frac{n}{x}\}</script><p>式子中的x为均等分之后
     </a>
   </span>
   
-  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>115</span>
+            </span>
 
         </div>
       </header>
@@ -382,6 +257,108 @@ Max \ \ \ =\ \ \ max\{x^\frac{n}{x}\}</script><p>式子中的x为均等分之后
       
           <h1 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h1><p>在学习各种语言的时候，尤其是在校学习<code>C\C++</code>的时候，很难理解学习这种在黑框框里运行的程序语言到底是用来干什么的，除了入门书籍上所给出的案例，找不到可以使用这些语言做什么，于是便想在<code>github</code>上找一些开源的入门项目来练手。</p>
 
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/30/leetcode-343/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="SunWenJu">
+      <meta itemprop="description" content="A Blog of Huster">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WhiteSheep's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/30/leetcode-343/" class="post-title-link" itemprop="url">LeetCode 343.题整数分割题解</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-30 21:47:12" itemprop="dateCreated datePublished" datetime="2020-07-30T21:47:12+08:00">2020-07-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-31 15:23:59" itemprop="dateModified" datetime="2020-07-31T15:23:59+08:00">2020-07-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/leetcode/" itemprop="url" rel="index"><span itemprop="name">leetcode</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/07/30/leetcode-343/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/07/30/leetcode-343/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.2k</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id><a href="#" class="headerlink" title=" "></a> </h3>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/07/30/leetcode-343/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -454,6 +431,8 @@ Max \ \ \ =\ \ \ max\{x^\frac{n}{x}\}</script><p>式子中的x为均等分之后
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="SunWenJu"
+      src="/images/avatar.gif">
   <p class="site-author-name" itemprop="name">SunWenJu</p>
   <div class="site-description" itemprop="description">A Blog of Huster</div>
 </div>
@@ -466,9 +445,17 @@ Max \ \ \ =\ \ \ max\{x^\frac{n}{x}\}</script><p>式子中的x为均等分之后
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
-      <div class="site-state-item site-state-tags">
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
         <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">标签</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -499,11 +486,37 @@ Max \ \ \ =\ \ \ max\{x^\frac{n}{x}\}</script><p>式子中的x为均等分之后
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">SunWenJu</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">2k</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
@@ -517,6 +530,7 @@ Max \ \ \ =\ \ \ max\{x^\frac{n}{x}\}</script><p>式子中的x为均等分之后
   </div>
 
   
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -526,17 +540,25 @@ Max \ \ \ =\ \ \ max\{x^\frac{n}{x}\}</script><p>式子中的x为均等分之后
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
 
 
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/three-waves.min.js"></script>
+    <script defer src="/lib/three/canvas_lines.min.js"></script>
+    <script defer src="/lib/three/canvas_sphere.min.js"></script>
 
 
   
 
 
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 
